@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 
 /**
  *  通知
- * @author mona
+ * @author sry
  * @date 2017/12/19
  */
 public class Announcement {

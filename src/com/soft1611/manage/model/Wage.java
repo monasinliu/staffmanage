@@ -4,7 +4,7 @@ import java.sql.Date;
 
 /**
  *  工资
- * @author mona
+ * @author sry
  * @date 2017/12/19
  */
 public class Wage {

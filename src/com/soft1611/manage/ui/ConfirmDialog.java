@@ -6,7 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Created by MoQi on 2017-12-18.
+ *
+ * @author MoQi
+ * @date 2017-12-18
  * 自定义对话框
  */
 public class ConfirmDialog extends JDialog {

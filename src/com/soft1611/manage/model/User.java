@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  *  用户
- * @author mona
+ * @author sry
  * @date 2017/12/19
  */
 public class User {

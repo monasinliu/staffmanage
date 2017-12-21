@@ -6,7 +6,9 @@ import com.soft1611.manage.dao.impl.PermissionsDAOImpl;
 import com.soft1611.manage.dao.impl.UserDAOImpl;
 
 /**
- * Created by mona on 2017/12/20.
+ *  DAO工厂
+ * @author sry
+ * @date 2017/12/20
  */
 public class DAOFactory {
     public static UserDAO getUserDAOInstance(){

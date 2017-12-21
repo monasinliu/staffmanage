@@ -5,8 +5,8 @@ import com.soft1611.manage.model.User;
 import java.sql.SQLException;
 
 /**
- *  用户实现接口
- * @author mona
+ *  用户接口
+ * @author sry
  * @date 2017/12/18
  */
 public interface UserDAO {

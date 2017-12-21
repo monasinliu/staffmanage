@@ -8,6 +8,7 @@ import java.util.Map;
 
 /**
  * JDBC辅助类 用于构建数据库连接（采用单例模式），封装了增、删、改、查的基本功能，方便具体的DAO类实现
+ * @author xu
  */
 public final class JDBCUtil {
     private static String url = "jdbc:mysql://localhost:3306/db_staffmanage";

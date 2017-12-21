@@ -2,7 +2,7 @@ package com.soft1611.manage.model;
 
 /**
  *  权限
- * @author mona
+ * @author sry
  * @date 2017/12/20
  */
 public class Permissions {

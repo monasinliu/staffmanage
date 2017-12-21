@@ -14,8 +14,8 @@ import java.util.*;
 import java.util.List;
 
 /**
- *
- * @author mona
+ *  主界面
+ * @author sry
  * @date 2017/12/21
  */
 public class MainFrame extends JFrame {

@@ -16,7 +16,9 @@ import java.awt.event.MouseEvent;
 import java.util.Map;
 
 /**
- * Created by mona on 2017/12/20.
+ *  登录界面
+ * @author sry
+ * @date 2017/12/20
  */
 public class LoginFrame extends JFrame{
     private JPanel mainPanel;

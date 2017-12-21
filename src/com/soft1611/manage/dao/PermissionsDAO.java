@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- *  权限实现接口
- * @author mona
+ *  权限接口
+ * @author sry
  * @date 2017/12/20
  */
 public interface PermissionsDAO {

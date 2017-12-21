@@ -6,7 +6,9 @@ import java.awt.*;
 import static java.awt.Color.BLUE;
 
 /**
- * Created by DELL on 2017/12/19.
+ *  自定义按钮
+ * @author yangmeng
+ * @date 2017/12/19
  */
 public class Style {
     public final static Dimension BUTTON_PRIMARY_SIZE = new Dimension(160, 50);

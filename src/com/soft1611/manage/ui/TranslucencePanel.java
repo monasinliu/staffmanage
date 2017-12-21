@@ -5,7 +5,9 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 /**
- * Created by mona on 2017/12/20.
+ *  透明面板
+ * @author mona
+ * @date 2017/12/20
  */
 public class TranslucencePanel extends JPanel {
     private BufferedImage background;

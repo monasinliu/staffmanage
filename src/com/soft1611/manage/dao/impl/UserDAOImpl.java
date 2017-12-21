@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import java.util.Map;
 
 /**
- *
- * @author mona
+ *  用户接口实现类
+ * @author sry
  * @date 2017/12/20
  */
 public class UserDAOImpl implements UserDAO {
