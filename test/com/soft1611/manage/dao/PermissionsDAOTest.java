@@ -23,7 +23,7 @@ public class PermissionsDAOTest {
 
     @Test
     public void getPermissions() throws Exception {
-        Map<String, List<Permissions>> map = permissionsDAO.getPermissions("20010103");
+        Map<String, List<Permissions>> map = permissionsDAO.getPermissions("20010101");
         System.out.println(map);
         System.out.println(map.size());
     }
