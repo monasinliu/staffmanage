@@ -76,6 +76,8 @@ public class MainFrame extends JFrame {
         setUndecorated(true);
         setVisible(true);
 
+        centerPanel.setLayout(cardLayout);
+
         exitPanel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -179,7 +181,9 @@ public class MainFrame extends JFrame {
         readAnnouncePanel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+                AnnouncePanel announcePanel = new AnnouncePanel();
+                centerPanel.add(announcePanel,"card1");
+                cardLayout.show(centerPanel,"card1");
             }
 
             @Override

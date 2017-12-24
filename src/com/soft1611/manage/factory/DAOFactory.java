@@ -1,7 +1,9 @@
 package com.soft1611.manage.factory;
 
+import com.soft1611.manage.dao.AnnounceDAO;
 import com.soft1611.manage.dao.PermissionsDAO;
 import com.soft1611.manage.dao.UserDAO;
+import com.soft1611.manage.dao.impl.AnnounceDAOImpl;
 import com.soft1611.manage.dao.impl.PermissionsDAOImpl;
 import com.soft1611.manage.dao.impl.UserDAOImpl;
 
@@ -17,5 +19,9 @@ public class DAOFactory {
 
     public static PermissionsDAO getPermissionsDAOInstance(){
         return new PermissionsDAOImpl();
+    }
+
+    public static AnnounceDAO getAnnounceDAOInstance(){
+        return new AnnounceDAOImpl();
     }
 }
