@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65922ce0-2b61-41dc-a1ce-519b9f888466" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/dao/AttendanceDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/dao/StaffDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/dao/WageDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/dao/impl/AttendanceDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/dao/impl/StaffDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/dao/impl/WageDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/AnnounceDialog.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/AnnounceDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/SetOfAccountManagePanel.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/SetOfAccountManagePanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/StatisticsPanel.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/StatisticsPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/model/Attendance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/model/Department.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/model/Staff.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/service/StaffService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/service/WageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/service/impl/StaffServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/service/impl/WageServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/utils/ExportExcel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/factory/DAOFactory.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/factory/DAOFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/factory/ServiceFactory.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/factory/ServiceFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AnnouncePanel$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AnnouncePanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AnnouncePanel.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AnnouncePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$2.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$3.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$4.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$5.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$6.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$7.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/service/UserService.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/dao/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/dao/impl/UserDAOImpl.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/dao/impl/UserDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/factory/DAOFactory.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/factory/DAOFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/factory/ServiceFactory.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/factory/ServiceFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/AnnouncePanel.form" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/AnnouncePanel.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/AnnouncePanel.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/AnnouncePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/MainFrame.form" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/MainFrame.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/MainFrame.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/service/UserService.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.form" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,7 +25,69 @@
             <state relative-caret-position="1479">
               <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
               <folding>
-                <element signature="e#1445#1446#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1478#1479#0" expanded="false" />
+                <element signature="e#1506#1507#0" expanded="false" />
+                <element signature="e#1540#1541#0" expanded="false" />
+                <element signature="e#1570#1571#0" expanded="false" />
+                <element signature="e#1616#1617#0" expanded="false" />
+                <element signature="e#1654#1655#0" expanded="false" />
+                <element signature="e#1691#1692#0" expanded="false" />
+                <element signature="e#1724#1725#0" expanded="false" />
+                <element signature="e#1776#1777#0" expanded="false" />
+                <element signature="e#1820#1821#0" expanded="false" />
+                <element signature="e#1851#1852#0" expanded="false" />
+                <element signature="e#1878#1879#0" expanded="false" />
+                <element signature="e#1918#1919#0" expanded="false" />
+                <element signature="e#1950#1951#0" expanded="false" />
+                <element signature="e#1980#1981#0" expanded="false" />
+                <element signature="e#2006#2007#0" expanded="false" />
+                <element signature="e#2044#2045#0" expanded="false" />
+                <element signature="e#2074#2075#0" expanded="false" />
+                <element signature="e#2107#2108#0" expanded="false" />
+                <element signature="e#2136#2137#0" expanded="false" />
+                <element signature="e#2180#2181#0" expanded="false" />
+                <element signature="e#2216#2217#0" expanded="false" />
+                <element signature="e#2250#2251#0" expanded="false" />
+                <element signature="e#2280#2281#0" expanded="false" />
+                <element signature="e#2326#2327#0" expanded="false" />
+                <element signature="e#2364#2365#0" expanded="false" />
+                <element signature="e#2398#2399#0" expanded="false" />
+                <element signature="e#2428#2429#0" expanded="false" />
+                <element signature="e#2474#2475#0" expanded="false" />
+                <element signature="e#2512#2513#0" expanded="false" />
+                <element signature="e#2548#2549#0" expanded="false" />
+                <element signature="e#2580#2581#0" expanded="false" />
+                <element signature="e#2630#2631#0" expanded="false" />
+                <element signature="e#2672#2673#0" expanded="false" />
+                <element signature="e#2703#2704#0" expanded="false" />
+                <element signature="e#2730#2731#0" expanded="false" />
+                <element signature="e#2770#2771#0" expanded="false" />
+                <element signature="e#2802#2803#0" expanded="false" />
+                <element signature="e#2834#2835#0" expanded="false" />
+                <element signature="e#2862#2863#0" expanded="false" />
+                <element signature="e#2904#2905#0" expanded="false" />
+                <element signature="e#2938#2939#0" expanded="false" />
+                <element signature="e#2980#2981#0" expanded="false" />
+                <element signature="e#3018#3019#0" expanded="false" />
+                <element signature="e#3080#3081#0" expanded="false" />
+                <element signature="e#3134#3135#0" expanded="false" />
+                <element signature="e#3169#3170#0" expanded="false" />
+                <element signature="e#3202#3203#0" expanded="false" />
+                <element signature="e#3252#3253#0" expanded="false" />
+                <element signature="e#3296#3297#0" expanded="false" />
+                <element signature="e#3328#3329#0" expanded="false" />
+                <element signature="e#3356#3357#0" expanded="false" />
+                <element signature="e#3398#3399#0" expanded="false" />
+                <element signature="e#3432#3433#0" expanded="false" />
+                <element signature="e#3464#3465#0" expanded="false" />
+                <element signature="e#3492#3493#0" expanded="false" />
+                <element signature="e#3534#3535#0" expanded="false" />
+                <element signature="e#3568#3569#0" expanded="false" />
+                <element signature="e#3600#3601#0" expanded="false" />
+                <element signature="e#3628#3629#0" expanded="false" />
+                <element signature="e#3670#3671#0" expanded="false" />
+                <element signature="e#3704#3705#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -104,7 +118,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2175">
               <caret line="87" column="8" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,9 +130,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1044">
               <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,8 +148,8 @@
       <file leaf-file-name="ChangePassword.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="899">
+              <caret line="54" column="61" lean-forward="false" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,11 +230,11 @@
         <option value="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel2.java" />
         <option value="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel3.java" />
         <option value="$PROJECT_DIR$/src/com/soft1611/manage/frame/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.form" />
         <option value="$PROJECT_DIR$/src/com/soft1611/manage/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/com/soft1611/manage/dao/impl/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/com/soft1611/manage/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/com/soft1611/manage/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.form" />
         <option value="$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.java" />
       </list>
     </option>
@@ -1078,7 +1092,7 @@
       <workItem from="1514159561827" duration="14048000" />
       <workItem from="1514183782831" duration="14787000" />
       <workItem from="1514246057832" duration="9390000" />
-      <workItem from="1514255496773" duration="401000" />
+      <workItem from="1514255496773" duration="1619000" />
     </task>
     <servers />
   </component>
@@ -1103,11 +1117,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86947000" />
+    <option name="totallyTimeSpent" value="88165000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1492,17 +1506,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/model/Staff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
           <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
           <folding>
-            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1478#1479#0" expanded="false" />
+            <element signature="e#1506#1507#0" expanded="false" />
+            <element signature="e#1540#1541#0" expanded="false" />
+            <element signature="e#1570#1571#0" expanded="false" />
+            <element signature="e#1616#1617#0" expanded="false" />
+            <element signature="e#1654#1655#0" expanded="false" />
+            <element signature="e#1691#1692#0" expanded="false" />
+            <element signature="e#1724#1725#0" expanded="false" />
+            <element signature="e#1776#1777#0" expanded="false" />
+            <element signature="e#1820#1821#0" expanded="false" />
+            <element signature="e#1851#1852#0" expanded="false" />
+            <element signature="e#1878#1879#0" expanded="false" />
+            <element signature="e#1918#1919#0" expanded="false" />
+            <element signature="e#1950#1951#0" expanded="false" />
+            <element signature="e#1980#1981#0" expanded="false" />
+            <element signature="e#2006#2007#0" expanded="false" />
+            <element signature="e#2044#2045#0" expanded="false" />
+            <element signature="e#2074#2075#0" expanded="false" />
+            <element signature="e#2107#2108#0" expanded="false" />
+            <element signature="e#2136#2137#0" expanded="false" />
+            <element signature="e#2180#2181#0" expanded="false" />
+            <element signature="e#2216#2217#0" expanded="false" />
+            <element signature="e#2250#2251#0" expanded="false" />
+            <element signature="e#2280#2281#0" expanded="false" />
+            <element signature="e#2326#2327#0" expanded="false" />
+            <element signature="e#2364#2365#0" expanded="false" />
+            <element signature="e#2398#2399#0" expanded="false" />
+            <element signature="e#2428#2429#0" expanded="false" />
+            <element signature="e#2474#2475#0" expanded="false" />
+            <element signature="e#2512#2513#0" expanded="false" />
+            <element signature="e#2548#2549#0" expanded="false" />
+            <element signature="e#2580#2581#0" expanded="false" />
+            <element signature="e#2630#2631#0" expanded="false" />
+            <element signature="e#2672#2673#0" expanded="false" />
+            <element signature="e#2703#2704#0" expanded="false" />
+            <element signature="e#2730#2731#0" expanded="false" />
+            <element signature="e#2770#2771#0" expanded="false" />
+            <element signature="e#2802#2803#0" expanded="false" />
+            <element signature="e#2834#2835#0" expanded="false" />
+            <element signature="e#2862#2863#0" expanded="false" />
+            <element signature="e#2904#2905#0" expanded="false" />
+            <element signature="e#2938#2939#0" expanded="false" />
+            <element signature="e#2980#2981#0" expanded="false" />
+            <element signature="e#3018#3019#0" expanded="false" />
+            <element signature="e#3080#3081#0" expanded="false" />
+            <element signature="e#3134#3135#0" expanded="false" />
+            <element signature="e#3169#3170#0" expanded="false" />
+            <element signature="e#3202#3203#0" expanded="false" />
+            <element signature="e#3252#3253#0" expanded="false" />
+            <element signature="e#3296#3297#0" expanded="false" />
+            <element signature="e#3328#3329#0" expanded="false" />
+            <element signature="e#3356#3357#0" expanded="false" />
+            <element signature="e#3398#3399#0" expanded="false" />
+            <element signature="e#3432#3433#0" expanded="false" />
+            <element signature="e#3464#3465#0" expanded="false" />
+            <element signature="e#3492#3493#0" expanded="false" />
+            <element signature="e#3534#3535#0" expanded="false" />
+            <element signature="e#3568#3569#0" expanded="false" />
+            <element signature="e#3600#3601#0" expanded="false" />
+            <element signature="e#3628#3629#0" expanded="false" />
+            <element signature="e#3670#3671#0" expanded="false" />
+            <element signature="e#3704#3705#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1535,9 +1606,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1553,14 +1622,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2175">
           <caret line="87" column="8" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="899">
+          <caret line="54" column="61" lean-forward="false" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
