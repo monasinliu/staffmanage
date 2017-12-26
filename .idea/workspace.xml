@@ -148,8 +148,8 @@
       <file leaf-file-name="ChangePassword.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="899">
-              <caret line="54" column="61" lean-forward="false" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
+            <state relative-caret-position="508">
+              <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1092,7 +1092,7 @@
       <workItem from="1514159561827" duration="14048000" />
       <workItem from="1514183782831" duration="14787000" />
       <workItem from="1514246057832" duration="9390000" />
-      <workItem from="1514255496773" duration="1619000" />
+      <workItem from="1514255496773" duration="1700000" />
     </task>
     <servers />
   </component>
@@ -1117,7 +1117,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88165000" />
+    <option name="totallyTimeSpent" value="88246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1635,8 +1635,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/ChangePassword.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="54" column="61" lean-forward="false" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
+        <state relative-caret-position="508">
+          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -52,19 +52,6 @@ public class ChangePassword extends JPanel {
                 } else{
                     JOptionPane.showConfirmDialog(null, "原密码错误！");
                 }
-//                if (oldPassword.equals(user.getPassword())){
-//                    if (newPassword.equals(oldPassword)) {
-//                        JOptionPane.showConfirmDialog(null, "不能与原密码一致！");
-//                    } else if (confirmPassword.equals(newPassword)) {
-//                        if (textField2.getText() == null) {
-//                            JOptionPane.showConfirmDialog(null, "不能为空！");
-//                        } else {
-//
-//                        }
-//                    }
-//                } else{
-//                    JOptionPane.showConfirmDialog(null, "原密码错误！");
-//                }
             }
         });
     }
