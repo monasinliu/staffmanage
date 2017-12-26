@@ -1,11 +1,7 @@
 package com.soft1611.manage.factory;
 
-import com.soft1611.manage.dao.AnnounceDAO;
-import com.soft1611.manage.dao.PermissionsDAO;
-import com.soft1611.manage.dao.UserDAO;
-import com.soft1611.manage.dao.impl.AnnounceDAOImpl;
-import com.soft1611.manage.dao.impl.PermissionsDAOImpl;
-import com.soft1611.manage.dao.impl.UserDAOImpl;
+import com.soft1611.manage.dao.*;
+import com.soft1611.manage.dao.impl.*;
 
 /**
  *  DAO工厂
@@ -23,5 +19,17 @@ public class DAOFactory {
 
     public static AnnounceDAO getAnnounceDAOInstance(){
         return new AnnounceDAOImpl();
+    }
+
+    public static StaffDAO getStaffDAOInstance(){
+        return new StaffDAOImpl();
+    }
+
+    public static WageDAO getWageDAOInstance(){
+        return new WageDAOImpl();
+    }
+
+    public static AttendanceDAO getAttendanceDAOInstance(){
+        return new AttendanceDAOImpl();
     }
 }

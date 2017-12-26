@@ -27,4 +27,12 @@ public class UserDAOImpl implements UserDAO {
             return null;
         }
     }
+
+    @Override
+    public int update(User user) throws SQLException {
+        String sql = "UPDATE t_user SET password = ? profile = ? , WHERE account = ?";
+        Object[] params = {user.getPassword(),user.getProfile(),user.getAccount()};
+        int n = jdbcUtil.executeUpdate(sql, params);
+        return n;
+    }
 }

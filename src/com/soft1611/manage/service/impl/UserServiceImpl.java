@@ -1,8 +1,10 @@
 package com.soft1611.manage.service.impl;
 
+import com.soft1611.manage.dao.StaffDAO;
 import com.soft1611.manage.dao.PermissionsDAO;
 import com.soft1611.manage.dao.UserDAO;
 import com.soft1611.manage.factory.DAOFactory;
+import com.soft1611.manage.model.Staff;
 import com.soft1611.manage.model.Permissions;
 import com.soft1611.manage.model.User;
 import com.soft1611.manage.service.UserService;
@@ -20,6 +22,7 @@ import java.util.Map;
 public class UserServiceImpl implements UserService {
     private UserDAO userDAO = DAOFactory.getUserDAOInstance();
     private PermissionsDAO permissionsDAO = DAOFactory.getPermissionsDAOInstance();
+    private StaffDAO archivesDAO = DAOFactory.getStaffDAOInstance();
     @Override
     public Map<String, Object> userLogin(String account, String password) {
         Map<String,Object> map = new HashMap<>();
@@ -53,5 +56,44 @@ public class UserServiceImpl implements UserService {
             e.printStackTrace();
         }
         return map;
+    }
+
+    @Override
+    public Staff getArchives(String account) {
+        Staff archives = null;
+        try {
+            archives = archivesDAO.getArchives(account);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return archives;
+    }
+
+    @Override
+    public int changePassword(String account, String password) {
+        int n = 0 ;
+        User user = null;
+        try{
+            user = userDAO.getUser(account);
+            user.setPassword(password);
+            n = userDAO.update(user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return n;
+    }
+
+    @Override
+    public int changeProfile(String account, byte[] profile) {
+        int n = 0 ;
+        User user = null;
+        try {
+            user = userDAO.getUser(account);
+            user.setProfile(profile);
+            n= userDAO.update(user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return n;
     }
 }

@@ -1,5 +1,6 @@
 package com.soft1611.manage.service;
 
+import com.soft1611.manage.model.Staff;
 import com.soft1611.manage.model.Permissions;
 
 import java.util.List;
@@ -25,4 +26,10 @@ public interface UserService {
      * @return
      */
     Map<String,List<Permissions>> userPermission(String userID);
+
+    Staff getArchives(String account);
+
+    int changePassword(String account,String password);
+
+    int changeProfile(String account, byte[] profile);
 }

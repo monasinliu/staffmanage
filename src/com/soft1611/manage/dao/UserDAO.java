@@ -17,4 +17,6 @@ public interface UserDAO {
      * @throws SQLException
      */
     User getUser(String account) throws SQLException;
+
+    int update(User user) throws SQLException;
 }

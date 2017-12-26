@@ -36,8 +36,10 @@ public class AnnouncePanel extends JPanel{
     Color lightBlack = new Color(51,51,51);
     Color anotherBlack = new Color(72,72,72);
     Color lightGrey = new Color(204,204,204);
+    Color labelBlue = new Color(100,149,237);
 
-    public AnnouncePanel() {
+    public AnnouncePanel(JPanel centerPanel1) {
+        mainPanel.setPreferredSize(new Dimension(centerPanel1.getWidth(),centerPanel1.getHeight()));
         announcements = announceService.readAnnouncement();
         initTable();
         panels = new JPanel[]{panel1,panel2,panel3,panel4};
@@ -46,7 +48,7 @@ public class AnnouncePanel extends JPanel{
             JLabel centerLabel = new JLabel(announcements.get(i).getContent());
             upLabel.setFont(new Font("微软雅黑",Font.BOLD,13));
             centerLabel.setFont(new Font("微软雅黑",Font.PLAIN,13));
-            if (i/2 == 0 ){
+            if (i%2 == 0 ){
                 panels[i].setBackground(Color.white);
                 upLabel.setForeground(lightBlack);
                 centerLabel.setForeground(lightBlack);
@@ -65,25 +67,50 @@ public class AnnouncePanel extends JPanel{
             centerPanel.add(centerLabel);
             panels[i].add(upLabel,BorderLayout.NORTH);
             panels[i].add(centerLabel,BorderLayout.CENTER);
+            setMouseListener(i);
         }
         moreLabel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (flag){
                     rightPanel.setVisible(false);
+                    flag = false;
                 }else {
                     rightPanel.setVisible(true);
+                    flag = true;
                 }
             }
 
             @Override
             public void mouseEntered(MouseEvent e) {
-                super.mouseEntered(e);
+                moreLabel.setForeground(labelBlue);
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
-                super.mouseExited(e);
+                moreLabel.setForeground(anotherBlack);
+            }
+        });
+        add(mainPanel);
+    }
+
+    private void setMouseListener(int i) {
+        panels[i].addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                AnnounceDialog announceDialog = new AnnounceDialog(announcements.get(i));
+                announceDialog.setLocationRelativeTo(null);
+                announceDialog.setVisible(true);
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                panels[i].setBorder(BorderFactory.createLineBorder(lightGrey));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                panels[i].setBorder(BorderFactory.createEmptyBorder());
             }
         });
     }
@@ -110,11 +137,4 @@ public class AnnouncePanel extends JPanel{
         }
     }
 
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("AnnouncePanel");
-        frame.setContentPane(new AnnouncePanel().mainPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
-    }
 }
