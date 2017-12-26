@@ -34,6 +34,7 @@ public class UserServiceImpl implements UserService {
         }
         if (user!=null){
             if (password.equals(user.getPassword())){
+                System.out.println(user.getPassword());
                 map.put("flag","登录成功");
                 map.put("user",user);
             }else {

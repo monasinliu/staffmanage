@@ -64,6 +64,8 @@ public class MainFrame extends JFrame {
     //薪资记录
     private InfoPanel3 wageRecordPanel;
 
+    private ChangePassword changePasswordPanel;
+
     Color oldColor = upPanel.getBackground();
     Color newColor = new Color(237,64,64);
     Color labelBlue = new Color(100,149,237);
@@ -117,7 +119,10 @@ public class MainFrame extends JFrame {
         settingLabel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+                changePasswordPanel = new ChangePassword(user);
+                System.out.println(user.getPassword());
+                centerPanel.add(changePasswordPanel,"changePassword");
+                cardLayout.show(centerPanel,"changePassword");
             }
 
             @Override

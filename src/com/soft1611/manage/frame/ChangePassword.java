@@ -20,37 +20,40 @@ public class ChangePassword extends JPanel {
     private JPasswordField passwordField1;
     private JPasswordField passwordField2;
     private JPasswordField passwordField3;
-    private User user;
 
     private UserService userService = ServiceFactory.getUserServiceInstance();
 
     public ChangePassword(User user) {
-        this.user = user;
         add(mainPanel);
-        String oldPassword = new String(passwordField1.getPassword());
-        String newPassword = new String(passwordField2.getPassword());
-        String confirmPassword = new String(passwordField3.getPassword());
 
         确认保存Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String oldPassword = new String(passwordField1.getPassword());
+                String newPassword = new String(passwordField2.getPassword());
+                String confirmPassword = new String(passwordField3.getPassword());
                 if (oldPassword.equals(user.getPassword())){
                     if (newPassword!=null){
                         if (newPassword.equals(oldPassword)){
-                            JOptionPane.showConfirmDialog(null, "不能与原密码一致！");
+                            JOptionPane.showMessageDialog(null, "不能与原密码一致！");
                         }else {
                             if (confirmPassword.equals(newPassword)){
-                                userService.changePassword(user.getAccount(),newPassword);
-                                JOptionPane.showConfirmDialog(null, "重置成功！");
+                                int n = userService.changePassword(user.getAccount(),newPassword);
+                                if (n == 1){
+                                    JOptionPane.showMessageDialog(null, "重置成功！");
+                                }else {
+                                    JOptionPane.showMessageDialog(null, "重置失败！");
+                                }
                             }else {
-                                JOptionPane.showConfirmDialog(null, "两次输入密码不一致");
+                                JOptionPane.showMessageDialog(null, "两次输入密码不一致");
                             }
                         }
                     }else {
-                        JOptionPane.showConfirmDialog(null, "不能为空！");
+                        JOptionPane.showMessageDialog(null, "不能为空！");
                     }
                 } else{
-                    JOptionPane.showConfirmDialog(null, "原密码错误！");
+                    System.out.println("错误密码："+user.getPassword());
+                    JOptionPane.showMessageDialog(null,"原密码错误");
                 }
             }
         });
