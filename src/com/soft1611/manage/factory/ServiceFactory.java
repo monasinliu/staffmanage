@@ -1,13 +1,7 @@
 package com.soft1611.manage.factory;
 
-import com.soft1611.manage.service.AnnounceService;
-import com.soft1611.manage.service.StaffService;
-import com.soft1611.manage.service.UserService;
-import com.soft1611.manage.service.WageService;
-import com.soft1611.manage.service.impl.AnnounceServiceImpl;
-import com.soft1611.manage.service.impl.StaffServiceImpl;
-import com.soft1611.manage.service.impl.UserServiceImpl;
-import com.soft1611.manage.service.impl.WageServiceImpl;
+import com.soft1611.manage.service.*;
+import com.soft1611.manage.service.impl.*;
 
 /**
  *  Service工厂
@@ -29,5 +23,21 @@ public class ServiceFactory {
 
     public static StaffService getStaffService() {
         return new StaffServiceImpl();
+    }
+
+    public static AttendanceManageService getAttendanceManageServiceInstance(){
+        return new AttendanceManageServiceImpl();
+    }
+
+    public static AdviceService getAdviceServiceInstance() {
+        return  new AdviceServiceImpl();
+    }
+
+    public static AssessmentService getAssessmentServiceInstance(){
+        return new AssessmentServiceImpl();
+    }
+
+    public static EducationService getEducationService(){
+        return new EducationServiceImpl();
     }
 }

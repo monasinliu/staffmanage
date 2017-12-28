@@ -28,6 +28,7 @@ public class ExportExcel {
         HSSFSheet hssfSheet = hssfWorkbook.createSheet("个人出勤记录表");
         HSSFRow hssfRow = hssfSheet.createRow(0);
         HSSFCell hssfCell = hssfRow.createCell(0);
+
         //  列  名
         String[] titles = {"日  期","姓  名","工  号","部  门","出勤记录"};
 	    //  for循环生成列名

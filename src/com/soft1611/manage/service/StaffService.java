@@ -44,4 +44,16 @@ public interface StaffService {
      */
    boolean updateStaff(Staff staff);
 
+    List<Staff> queryFilter(String condition);
+
+    int insert(Staff staff);
+
+    int[] batchInsert(List<Staff> staffList);
+
+    int[] batchDelete(List<String> ids);
+
+    List<Staff> getAll();
+
+    List<Staff> queryLike (String keywords) ;
+
 }

@@ -21,4 +21,8 @@ public interface AttendanceDAO {
      * @throws SQLException
      */
     List<Attendance> getAttendance(String account) throws SQLException;
+
+    int[] batchInsert(List<Attendance> list) throws SQLException;
+
+    List<Attendance> queryFilter(String condition) throws SQLException;
 }

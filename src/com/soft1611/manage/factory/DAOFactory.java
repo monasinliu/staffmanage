@@ -32,4 +32,17 @@ public class DAOFactory {
     public static AttendanceDAO getAttendanceDAOInstance(){
         return new AttendanceDAOImpl();
     }
+
+    public static AdviceDAO getAdviceDAOInstance() {
+        return new AdviceDAOImpl();
+    }
+
+    public static AssessmentDAO getAssessmentDAOInstance() {
+
+        return new AssessmentDAOImpl();
+    }
+
+    public static EducationDAO getEducationInstance(){
+        return new EducationDAOImpl();
+    }
 }

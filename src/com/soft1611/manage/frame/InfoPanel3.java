@@ -7,11 +7,14 @@ import com.soft1611.manage.factory.ServiceFactory;
 import com.soft1611.manage.model.Staff;
 import com.soft1611.manage.model.Wage;
 import com.soft1611.manage.service.StaffService;
+import com.soft1611.manage.utils.WagesExportExcel;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.Iterator;
 
@@ -146,7 +149,15 @@ public class InfoPanel3 extends JPanel {
             jButtons[i].setBackground(color);
             jButtons[i].setForeground(Color.white);
         }
-        bottonPanel.setPreferredSize(new Dimension(800,60));
+//导出按钮添加监听
+        jButtons[2].addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //调用工具类，将list数据写入指定路径的excel中
+                WagesExportExcel.exportData(wages);
+                JOptionPane.showMessageDialog(null,"导出成功！");
+            }
+        });        bottonPanel.setPreferredSize(new Dimension(800,60));
 
         bottonPanel.add(jButtons[3],FlowLayout.LEFT);
         bottonPanel.add(jLabel2,FlowLayout.LEFT);

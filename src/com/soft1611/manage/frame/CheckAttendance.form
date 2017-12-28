@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.soft1611.manage.frame.CheckAttendance">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="641" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="46713" layout-manager="GridLayoutManager" row-count="3" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="df2a2" class="javax.swing.JComboBox" binding="selectBox">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="人事部"/>
+                <item value="财务部"/>
+              </model>
+            </properties>
+          </component>
+          <hspacer id="9f4a4">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="7" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="572f1" class="javax.swing.JButton" binding="shortcutButton">
+            <constraints>
+              <grid row="1" column="8" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="提  交"/>
+            </properties>
+          </component>
+          <component id="37e2f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Microsoft YaHei" size="26" style="0"/>
+              <text value="考勤"/>
+            </properties>
+          </component>
+          <component id="6386a" class="javax.swing.JLabel" binding="leaveLabel">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="img/new2.png"/>
+              <text value="0"/>
+              <toolTipText value="早退"/>
+            </properties>
+          </component>
+          <component id="dd030" class="javax.swing.JLabel" binding="lateLabel">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="img/new3.png"/>
+              <text value="0"/>
+              <toolTipText value="迟到"/>
+            </properties>
+          </component>
+          <component id="4a63e" class="javax.swing.JLabel" binding="absentLabel">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="img/new4.png"/>
+              <text value="0"/>
+              <toolTipText value="旷工"/>
+            </properties>
+          </component>
+          <component id="ce07" class="javax.swing.JLabel" binding="outLabel">
+            <constraints>
+              <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="img/new6.png"/>
+              <text value="0"/>
+              <toolTipText value="出差"/>
+            </properties>
+          </component>
+          <component id="ebd28" class="javax.swing.JLabel" binding="okLabel">
+            <constraints>
+              <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="img/new5.png"/>
+              <text value="0"/>
+              <toolTipText value="到勤"/>
+            </properties>
+          </component>
+          <component id="9ac45" class="javax.swing.JLabel" binding="overtimeLabel">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="img/new1.png"/>
+              <text value="0"/>
+              <toolTipText value="加班"/>
+            </properties>
+          </component>
+          <component id="17b6" class="javax.swing.JButton" binding="selectButton">
+            <constraints>
+              <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="选择日期"/>
+            </properties>
+          </component>
+          <hspacer id="a531b">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="7" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="fa139" class="javax.swing.JLabel" binding="vacateLabel">
+            <constraints>
+              <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="img/new7.png"/>
+              <text value="0"/>
+              <toolTipText value="请假"/>
+            </properties>
+          </component>
+          <component id="da3b9" class="javax.swing.JLabel" binding="timeLabel">
+            <constraints>
+              <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Label"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="62a9d">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <horizontalScrollBarPolicy value="31"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="9321c" binding="centerPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+            <constraints/>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>

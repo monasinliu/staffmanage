@@ -1,6 +1,7 @@
 package com.soft1611.manage.frame;
 
 import com.soft1611.manage.factory.ServiceFactory;
+import com.soft1611.manage.model.Education;
 import com.soft1611.manage.model.Staff;
 import com.soft1611.manage.model.Permissions;
 import com.soft1611.manage.model.User;
@@ -14,7 +15,8 @@ import java.util.*;
 import java.util.List;
 
 /**
- *  主界面
+ * 主界面
+ *
  * @author sry
  * @date 2017/12/21
  */
@@ -51,34 +53,53 @@ public class MainFrame extends JFrame {
     private List<String> wageManageList = new ArrayList<>();
     private String permissionManage = "权限管理";
     private boolean permissionFlag = false;
-    private Map<String,List<String>> workMap;
+    private Map<String, List<String>> workMap;
     private Staff staff;
+    //基本信息管理
+    private BaseInfo baseInfoPanel = new BaseInfo();
+    //教育培训
+    private EducationPanel educationPanel = new EducationPanel();
+    //考勤管理
+    private CheckAttendance checkAttendancePanel = new CheckAttendance();
+    //奖惩管理
+    private AssessmentManagePanel assessmentManagePanel = new AssessmentManagePanel();
     //套账管理
     private SetOfAccountManagePanel setOfAccountManagePanel = new SetOfAccountManagePanel();
     //统计报表
     private StatisticsPanel statisticsPanel = new StatisticsPanel();
     //个人资料
-    private InfoPanel selfPanel ;
+    private InfoPanel selfPanel;
     //出勤记录
     private InfoPanel2 attendRecordPanel;
     //薪资记录
     private InfoPanel3 wageRecordPanel;
-
+    //修改密码
     private ChangePassword changePasswordPanel;
+    //奖惩信息
+    private AssessmentPanel assessmentPanel = new AssessmentPanel();
+    //提出建议
+    private AdvicePanel advicePanel;
+    //提交申请
+    private JPanel applyPanel1 = new JPanel();
+    //
+    private PermissionsManagePanel permissionsManagePanel = new PermissionsManagePanel();
+
 
     Color oldColor = upPanel.getBackground();
-    Color newColor = new Color(237,64,64);
-    Color labelBlue = new Color(100,149,237);
-    Color lightBlack = new Color(51,51,51);
-    Color anotherBlack = new Color(72,72,72);
-    Color beauGreen = new Color(26,188,156);
-    JButton[] buttons = new JButton[]{button1,button2,
-                        button3,button4,button5,button6};
-    String[] strings = new String[]{"个人资料","出勤记录","薪资记录","奖惩信息",
-                            "提出建议","提交申请"};
-    String[] panelName = new String[]{"个人资料","出勤记录","薪资记录"};
+    Color newColor = new Color(237, 64, 64);
+    Color labelBlue = new Color(100, 149, 237);
+    Color lightBlack = new Color(51, 51, 51);
+    Color anotherBlack = new Color(72, 72, 72);
+    Color beauGreen = new Color(26, 188, 156);
+    JButton[] buttons = new JButton[]{button1, button2,
+            button3, button4, button5, button6};
+    String[] strings = new String[]{"个人资料", "出勤记录", "薪资记录", "奖惩信息",
+            "提出建议", "提交申请"};
+    String[] trendsName = new String[]{"基本信息管理","奖惩管理","教育培训"
+            ,"考勤管理","统计报表","套账管理"};
     JPanel[] addPanels;
     JPanel[] showStaticPanels;
+    JPanel[] showTrendsPanels;
     boolean infoFlag = true;
     boolean applyFlag = true;
 
@@ -88,6 +109,7 @@ public class MainFrame extends JFrame {
         selfPanel = new InfoPanel(staff);
         attendRecordPanel = new InfoPanel2(staff);
         wageRecordPanel = new InfoPanel3(staff);
+        advicePanel = new AdvicePanel(staff.getAccount());
         init();
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -101,7 +123,7 @@ public class MainFrame extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 int n = ConfirmDialog.openDialog("是否退出系统 ?", Color.white);
                 System.out.println(n);
-                if (n == 1 ){
+                if (n == 1) {
                     dispose();
                 }
             }
@@ -121,8 +143,8 @@ public class MainFrame extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 changePasswordPanel = new ChangePassword(user);
                 System.out.println(user.getPassword());
-                centerPanel.add(changePasswordPanel,"changePassword");
-                cardLayout.show(centerPanel,"changePassword");
+                centerPanel.add(changePasswordPanel, "changePassword");
+                cardLayout.show(centerPanel, "changePassword");
             }
 
             @Override
@@ -138,8 +160,8 @@ public class MainFrame extends JFrame {
         cancelLabel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                int n = ConfirmDialog.openDialog("是否注销登录 ?",Color.white);
-                if (n == 1 ){
+                int n = ConfirmDialog.openDialog("是否注销登录 ?", Color.white);
+                if (n == 1) {
                     dispose();
                     new LoginFrame();
                 }
@@ -158,10 +180,10 @@ public class MainFrame extends JFrame {
         infoJPanel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if (infoFlag){
+                if (infoFlag) {
                     infoPanel.setVisible(infoFlag);
                     infoFlag = false;
-                }else if (!infoFlag){
+                } else if (!infoFlag) {
                     infoPanel.setVisible(infoFlag);
                     infoFlag = true;
                 }
@@ -180,10 +202,10 @@ public class MainFrame extends JFrame {
         applyJPanel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if (applyFlag){
+                if (applyFlag) {
                     applyPanel.setVisible(applyFlag);
                     applyFlag = false;
-                }else if (!applyFlag){
+                } else if (!applyFlag) {
                     applyPanel.setVisible(applyFlag);
                     applyFlag = true;
                 }
@@ -203,9 +225,9 @@ public class MainFrame extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 AnnouncePanel announcePanel = new AnnouncePanel(centerPanel);
-                announcePanel.setPreferredSize(new Dimension(centerPanel.getWidth(),centerPanel.getHeight()));
-                centerPanel.add(announcePanel,"card1");
-                cardLayout.show(centerPanel,"card1");
+                announcePanel.setPreferredSize(new Dimension(centerPanel.getWidth(), centerPanel.getHeight()));
+                centerPanel.add(announcePanel, "card1");
+                cardLayout.show(centerPanel, "card1");
             }
 
             @Override
@@ -218,21 +240,34 @@ public class MainFrame extends JFrame {
                 readLabel.setForeground(Color.white);
             }
         });
+        profileLabel.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+//                new ChangePhoto();
+            }
+        });
     }
 
     private void init() {
         centerPanel.setLayout(cardLayout);
-        showStaticPanels = new JPanel[]{selfPanel,attendRecordPanel,wageRecordPanel};
-        for (int i = 0 ; i < showStaticPanels.length ; i ++){
-            centerPanel.add(showStaticPanels[i],panelName[i]);
+        showStaticPanels = new JPanel[]{selfPanel, attendRecordPanel, wageRecordPanel
+                , assessmentPanel, advicePanel, applyPanel1};
+        showTrendsPanels = new JPanel[]{baseInfoPanel,assessmentManagePanel,educationPanel
+                ,checkAttendancePanel,statisticsPanel,setOfAccountManagePanel};
+        for (int i = 0; i < showStaticPanels.length; i++) {
+            centerPanel.add(showStaticPanels[i], strings[i]);
         }
+        for (int i = 0; i < showTrendsPanels.length; i++) {
+            centerPanel.add(showTrendsPanels[i], trendsName[i]);
+        }
+        centerPanel.add(permissionsManagePanel,"权限管理");
         Staff archives = userService.getArchives(user.getAccount());
-        nameLabel.setText("      "+archives.getName());
-        profileLabel.setIcon(setImage(user.getProfile(),100,100));
+        nameLabel.setText("      " + archives.getName());
+        profileLabel.setIcon(setImage(user.getProfile(), 100, 100));
         permissionsMap = userService.userPermission(user.getAccount());
-        for (int i = 0 ; i < buttons.length ; i ++){
+        for (int i = 0; i < buttons.length; i++) {
             buttons[i].setBackground(lightBlack);
-            buttons[i].setFont(new Font("微软雅黑",Font.PLAIN,13));
+            buttons[i].setFont(new Font("微软雅黑", Font.PLAIN, 13));
             buttons[i].setText(strings[i]);
             buttons[i].setForeground(Color.white);
             int index = i;
@@ -250,11 +285,7 @@ public class MainFrame extends JFrame {
             buttons[i].addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    if(index < 3){
-                        cardLayout.show(centerPanel,panelName[index]);
-                    }else {
-
-                    }
+                    cardLayout.show(centerPanel, strings[index]);
                 }
             });
         }
@@ -269,11 +300,10 @@ public class MainFrame extends JFrame {
         while (iterator.hasNext()) {
             Map.Entry<String, List<Permissions>> entry = iterator.next();
             String groupName = entry.getKey();
-            if ("基本信息管理".equals(groupName)||"奖惩管理".equals(groupName)
-                    ||"教育培训".equals(groupName)||"建议反馈".equals(groupName)) {
+            if ("基本信息管理".equals(groupName) || "奖惩管理".equals(groupName)
+                    || "教育培训".equals(groupName) || "考勤管理".equals(groupName)) {
                 accountManageList.add(groupName);
-            } else if ("统计报表".equals(groupName)||"套账管理".equals(groupName)
-                    ||"人员设置".equals(groupName)) {
+            } else if ("统计报表".equals(groupName) || "套账管理".equals(groupName)) {
                 wageManageList.add(groupName);
             } else if (permissionManage.equals(groupName)) {
                 permissionFlag = true;
@@ -281,39 +311,39 @@ public class MainFrame extends JFrame {
             i++;
         }
         int mapSize = 0;
-        if (accountManageList.size() != 0){
-            workMap.put("员工管理",accountManageList);
-            mapSize ++;
+        if (accountManageList.size() != 0) {
+            workMap.put("员工管理", accountManageList);
+            mapSize++;
         }
-        if (wageManageList.size()!=0){
-            workMap.put("财务管理",wageManageList);
-            mapSize ++;
+        if (wageManageList.size() != 0) {
+            workMap.put("财务管理", wageManageList);
+            mapSize++;
         }
-        if (permissionFlag){
-            workMap.put("权限管理",null);
-            mapSize ++;
+        if (permissionFlag) {
+            workMap.put("权限管理", null);
+            mapSize++;
         }
-        leftPanel.setLayout(new GridLayout(mapSize,1));
+        leftPanel.setLayout(new GridLayout(mapSize, 1));
         addPanels = new JPanel[mapSize];
-        final Boolean[] flag  = new Boolean[mapSize];
+        final Boolean[] flag = new Boolean[mapSize];
         int i = 0;
         Iterator<Map.Entry<String, List<String>>> workIterator = workMap.entrySet().iterator();
-        while( workIterator.hasNext()){
+        while (workIterator.hasNext()) {
             flag[i] = false;
             Map.Entry<String, List<String>> entry = workIterator.next();
             String workName = entry.getKey();
-            if ("权限管理".equals(workName)){
+            if ("权限管理".equals(workName)) {
                 addPanels[i] = new JPanel(new FlowLayout(FlowLayout.LEFT));
-                addPanels[i].setPreferredSize(new Dimension(leftPanel.getWidth(),50));
+                addPanels[i].setPreferredSize(new Dimension(leftPanel.getWidth(), 50));
                 addPanels[i].setBackground(anotherBlack);
-                JLabel label = new JLabel("   "+workName);
+                JLabel label = new JLabel("   " + workName);
                 label.setForeground(Color.white);
-                label.setFont(new Font("微软雅黑",Font.PLAIN,13));
+                label.setFont(new Font("微软雅黑", Font.PLAIN, 13));
                 addPanels[i].add(label);
                 addPanels[i].addMouseListener(new MouseAdapter() {
                     @Override
                     public void mouseClicked(MouseEvent e) {
-                        super.mouseClicked(e);
+                        cardLayout.show(centerPanel,"权限管理");
                     }
 
                     @Override
@@ -327,17 +357,17 @@ public class MainFrame extends JFrame {
                     }
                 });
                 leftPanel.add(addPanels[i]);
-            }else {
-                addPanels[i] = new JPanel(new GridLayout(2,1));
+            } else {
+                addPanels[i] = new JPanel(new GridLayout(2, 1));
                 addPanels[i].setBackground(anotherBlack);
-                JLabel label = new JLabel("    "+workName);
+                JLabel label = new JLabel("    " + workName);
                 label.setForeground(Color.white);
-                label.setFont(new Font("微软雅黑",Font.PLAIN,13));
+                label.setFont(new Font("微软雅黑", Font.PLAIN, 13));
                 List<String> list = workMap.get(workName);
-                JPanel panel = new JPanel(new GridLayout(list.size(),1));
+                JPanel panel = new JPanel(new GridLayout(list.size(), 1));
                 panel.setBackground(lightBlack);
                 JButton[] buttons = new JButton[list.size()];
-                addButtons(panel, buttons,list);
+                addButtons(panel, buttons, list);
                 panel.setVisible(false);
                 addPanels[i].add(label);
                 addPanels[i].add(panel);
@@ -345,10 +375,10 @@ public class MainFrame extends JFrame {
                 addPanels[i].addMouseListener(new MouseAdapter() {
                     @Override
                     public void mouseClicked(MouseEvent e) {
-                        if (flag[index]){
+                        if (flag[index]) {
                             panel.setVisible(false);
                             flag[index] = false;
-                        }else if (!flag[index]){
+                        } else if (!flag[index]) {
                             panel.setVisible(true);
                             flag[index] = true;
                         }
@@ -370,12 +400,12 @@ public class MainFrame extends JFrame {
         }
     }
 
-    private void addButtons(JPanel panel,JButton[] buttons,List<String> list) {
+    private void addButtons(JPanel panel, JButton[] buttons, List<String> list) {
         System.out.println(list);
-        for (int i = 0 ; i < buttons.length ; i ++){
+        for (int i = 0; i < buttons.length; i++) {
             buttons[i] = new JButton(list.get(i));
             buttons[i].setBackground(lightBlack);
-            buttons[i].setFont(new Font("微软雅黑",Font.PLAIN,13));
+            buttons[i].setFont(new Font("微软雅黑", Font.PLAIN, 13));
             buttons[i].setForeground(Color.white);
             int index = i;
             buttons[i].addMouseListener(new MouseAdapter() {
@@ -389,13 +419,19 @@ public class MainFrame extends JFrame {
                     buttons[index].setForeground(Color.white);
                 }
             });
+            buttons[i].addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    cardLayout.show(centerPanel,list.get(index));
+                }
+            });
             panel.add(buttons[i]);
         }
     }
 
-    private ImageIcon setImage(byte[] img,int height,int width) {
+    private ImageIcon setImage(byte[] img, int height, int width) {
         ImageIcon imageIcon = new ImageIcon(img);
-        imageIcon.setImage(imageIcon.getImage().getScaledInstance(100,100,Image.SCALE_FAST));
+        imageIcon.setImage(imageIcon.getImage().getScaledInstance(100, 100, Image.SCALE_FAST));
         //将图片按照当前大小自适应
         return imageIcon;
     }
