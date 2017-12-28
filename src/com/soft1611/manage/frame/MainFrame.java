@@ -311,6 +311,7 @@ public class MainFrame extends JFrame {
             i++;
         }
         int mapSize = 0;
+//        System.out.println(accountManageList);
         if (accountManageList.size() != 0) {
             workMap.put("员工管理", accountManageList);
             mapSize++;

@@ -146,4 +146,12 @@ public class AdvicePanel extends JPanel{
         Object[] rowData = {advice.getAccount(),advice.getContent()};
         dtm1.addRow(rowData);
     }
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("AdvicePanel");
+        frame.setContentPane(new AdvicePanel("20010101").mainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
 }

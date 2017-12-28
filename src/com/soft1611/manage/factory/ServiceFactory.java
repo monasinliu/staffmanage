@@ -40,4 +40,12 @@ public class ServiceFactory {
     public static EducationService getEducationService(){
         return new EducationServiceImpl();
     }
+
+    public static DepartmentService getDepartmentServiceInstance(){
+        return new DepartmentServiceImpl();
+    }
+
+    public static PermissionService getPermissionServiceInstance() {
+        return new PermissionServiceImpl();
+    }
 }

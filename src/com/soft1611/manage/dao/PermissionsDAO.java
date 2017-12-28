@@ -20,4 +20,6 @@ public interface PermissionsDAO {
      * @throws SQLException
      */
     Map<String,List<Permissions>> getPermissions(String userID) throws SQLException;
+
+    Map<String,List<String>> getAllPermission() throws SQLException;
 }

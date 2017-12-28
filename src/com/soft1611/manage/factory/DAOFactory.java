@@ -45,4 +45,8 @@ public class DAOFactory {
     public static EducationDAO getEducationInstance(){
         return new EducationDAOImpl();
     }
+
+    public static DepartmentDAO getDepartmentInstance(){
+        return new DepartmentDAOImpl();
+    }
 }

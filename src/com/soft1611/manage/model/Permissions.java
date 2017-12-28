@@ -8,7 +8,7 @@ package com.soft1611.manage.model;
 public class Permissions {
     private String groupName;
     private String account;
-    private String itemID;
+    private String itemName;
 
     public Permissions() {
     }
@@ -17,7 +17,7 @@ public class Permissions {
 
         this.groupName = groupName;
         this.account = account;
-        this.itemID = itemID;
+        this.itemName = itemID;
     }
 
     public String getGroupName() {
@@ -37,11 +37,11 @@ public class Permissions {
     }
 
     public String getItemID() {
-        return itemID;
+        return itemName;
     }
 
     public void setItemID(String itemID) {
-        this.itemID = itemID;
+        this.itemName = itemID;
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Permissions {
         return "Permissions{" +
                 "groupName='" + groupName + '\'' +
                 ", account='" + account + '\'' +
-                ", itemID='" + itemID + '\'' +
+                ", itemID='" + itemName + '\'' +
                 '}';
     }
 }
