@@ -3,7 +3,6 @@ package com.soft1611.manage.frame;
 import com.soft1611.manage.factory.ServiceFactory;
 import com.soft1611.manage.model.Advice;
 import com.soft1611.manage.service.AdviceService;
-import jdk.nashorn.internal.scripts.JO;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -45,9 +44,10 @@ public class AdvicePanel extends JPanel{
     java.util.List<Advice> list;
     String account;
     String anonymity = "否";
-    public AdvicePanel(String account) {
+    public AdvicePanel(String account, Dimension dimension) {
         this.account = account;
         add(mainPanel);
+        setPreferredSize(dimension);
         advices = adviceService.queryFilter(" WHERE account = '" + account + "' ");
         if (advices.size() != 0){
             Showtable1();
@@ -149,7 +149,7 @@ public class AdvicePanel extends JPanel{
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("AdvicePanel");
-        frame.setContentPane(new AdvicePanel("20010101").mainPanel);
+        frame.setContentPane(new AdvicePanel("20010101", new Dimension(500,500)).mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);

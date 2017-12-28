@@ -55,18 +55,19 @@ public class MainFrame extends JFrame {
     private boolean permissionFlag = false;
     private Map<String, List<String>> workMap;
     private Staff staff;
+    Dimension dimension = new Dimension(centerPanel.getWidth(), centerPanel.getHeight());
     //基本信息管理
-    private BaseInfo baseInfoPanel = new BaseInfo();
+    private BaseInfo baseInfoPanel = new BaseInfo(dimension);
     //教育培训
-    private EducationPanel educationPanel = new EducationPanel();
+    private EducationPanel educationPanel = new EducationPanel(dimension);
     //考勤管理
-    private CheckAttendance checkAttendancePanel = new CheckAttendance();
+    private CheckAttendance checkAttendancePanel = new CheckAttendance(dimension);
     //奖惩管理
-    private AssessmentManagePanel assessmentManagePanel = new AssessmentManagePanel();
+    private AssessmentManagePanel assessmentManagePanel = new AssessmentManagePanel(dimension);
     //套账管理
-    private SetOfAccountManagePanel setOfAccountManagePanel = new SetOfAccountManagePanel();
+    private SetOfAccountManagePanel setOfAccountManagePanel = new SetOfAccountManagePanel(dimension);
     //统计报表
-    private StatisticsPanel statisticsPanel = new StatisticsPanel();
+    private StatisticsPanel statisticsPanel = new StatisticsPanel(dimension);
     //个人资料
     private InfoPanel selfPanel;
     //出勤记录
@@ -106,15 +107,15 @@ public class MainFrame extends JFrame {
     public MainFrame(User user) {
         this.user = user;
         staff = userService.getArchives(user.getAccount());
-        selfPanel = new InfoPanel(staff);
-        attendRecordPanel = new InfoPanel2(staff);
-        wageRecordPanel = new InfoPanel3(staff);
-        advicePanel = new AdvicePanel(staff.getAccount());
+        selfPanel = new InfoPanel(staff,dimension);
+        attendRecordPanel = new InfoPanel2(staff,dimension);
+        wageRecordPanel = new InfoPanel3(staff,dimension);
+        advicePanel = new AdvicePanel(staff.getAccount(),dimension);
         init();
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setExtendedState(MAXIMIZED_BOTH);
-        setUndecorated(true);
+//        setUndecorated(true);
         setVisible(true);
 
 
@@ -225,7 +226,7 @@ public class MainFrame extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 AnnouncePanel announcePanel = new AnnouncePanel(centerPanel);
-                announcePanel.setPreferredSize(new Dimension(centerPanel.getWidth(), centerPanel.getHeight()));
+//                announcePanel.setPreferredSize(new Dimension(centerPanel.getWidth(), centerPanel.getHeight()));
                 centerPanel.add(announcePanel, "card1");
                 cardLayout.show(centerPanel, "card1");
             }

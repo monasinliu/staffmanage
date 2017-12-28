@@ -1,5 +1,6 @@
 package com.soft1611.manage.service;
 
+import com.soft1611.manage.model.Staff;
 import com.soft1611.manage.model.Wage;
 
 import java.sql.SQLException;
@@ -21,4 +22,10 @@ public interface WageService {
     int[] batchDelete(List<String> strings);
 
     List<Wage> queryLike(String keywords);
+
+    double calNetSalary(double salary,int insurance,int basicWage);
+
+    double calBasicSalary(OutOfAccount outOfAccount, Staff staff);
+
+    int[] batchInsert(List<Wage> list);
 }

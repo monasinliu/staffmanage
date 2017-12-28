@@ -60,8 +60,9 @@ public class StatisticsPanel extends JPanel {
 
     Color labelBlue = new Color(100,149,237);
 
-    public StatisticsPanel() {
+    public StatisticsPanel(Dimension dimension) {
         add(mainPanel);
+        setPreferredSize(dimension);
         initTable1();
         initTable2();
         cardLayout = new CardLayout();
@@ -214,7 +215,7 @@ public class StatisticsPanel extends JPanel {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("StatisticsPanel");
-        frame.setContentPane(new StatisticsPanel().mainPanel);
+        frame.setContentPane(new StatisticsPanel(new Dimension(500,500)).mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);

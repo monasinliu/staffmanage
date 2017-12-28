@@ -12,7 +12,6 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
-import java.sql.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -61,7 +60,8 @@ public class AssessmentManagePanel extends JPanel{
     java.util.List<Assessment> assessmentList;
     boolean flag = false;
 
-    public AssessmentManagePanel() {
+    public AssessmentManagePanel(Dimension dimension) {
+        setPreferredSize(dimension);
         assessmentService = ServiceFactory.getAssessmentServiceInstance();
         userService = ServiceFactory.getUserServiceInstance();
         CardLayout card = new CardLayout();
@@ -308,7 +308,7 @@ public class AssessmentManagePanel extends JPanel{
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("AssessmentManagePanel");
-        frame.setContentPane(new AssessmentManagePanel().mainPanel);
+        frame.setContentPane(new AssessmentManagePanel(new Dimension(500,500)).mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);

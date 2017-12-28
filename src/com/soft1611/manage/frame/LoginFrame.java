@@ -43,7 +43,7 @@ public class LoginFrame extends JFrame{
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setExtendedState(MAXIMIZED_BOTH);
-        setUndecorated(true);
+//        setUndecorated(true);
         setVisible(true);
 
         exitPanel.addMouseListener(new MouseAdapter() {

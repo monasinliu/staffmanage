@@ -48,7 +48,7 @@ public class InfoPanel extends JPanel{
     Font font2  = new Font("微软雅黑",Font.BOLD,16);
     Color color = new Color(51,102,153);
     private StaffService staffService = ServiceFactory.getStaffService();
-    public InfoPanel(Staff staff) {
+    public InfoPanel(Staff staff,Dimension dimension) {
         this.staff = staff;
         labels = new JLabel[15];
         for(int i = 0; i < labels.length ; i++){
@@ -61,7 +61,7 @@ public class InfoPanel extends JPanel{
         bigPanel.setPreferredSize(new Dimension(800,700));
 
         add(getBigPanel());
-
+        setPreferredSize(dimension);
     }
 
     public JPanel getBigPanel() {
@@ -245,7 +245,7 @@ public class InfoPanel extends JPanel{
         frame.setSize(800, 800);
         frame.setLocationRelativeTo(null);
         try {
-            frame.add(new InfoPanel(staffDAO.getArchives("20010101")));
+            frame.add(new InfoPanel(staffDAO.getArchives("20010101"),new Dimension(500,500)));
         } catch (SQLException e) {
             e.printStackTrace();
         }

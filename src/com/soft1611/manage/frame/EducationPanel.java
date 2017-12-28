@@ -72,11 +72,11 @@ public class EducationPanel extends JPanel {
     }
 
 
-    public EducationPanel() {
+    public EducationPanel(Dimension dimension) {
 
         setCenterPanel(centerPanel);
         centerPanel.revalidate();
-
+        setPreferredSize(dimension);
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -150,7 +150,7 @@ public class EducationPanel extends JPanel {
         JFrame frame = new JFrame("教育培训");
         frame.setSize(600, 400);
         frame.setVisible(true);
-        frame.setContentPane((new EducationPanel()).MainPanel);
+        frame.setContentPane((new EducationPanel(new Dimension(500,500))).MainPanel);
         frame.setLocationRelativeTo(null);
 
 

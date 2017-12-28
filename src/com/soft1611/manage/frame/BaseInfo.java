@@ -74,11 +74,12 @@ public class BaseInfo extends JPanel {
     ButtonGroup group = new ButtonGroup();
 
 
-    public BaseInfo() {
+    public BaseInfo(Dimension dimension) {
         showStaffTable();
         group.add(boyButton);
         group.add(girlButton);
         boyButton.isSelected();
+        setPreferredSize(dimension);
         AddButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -393,7 +394,7 @@ public class BaseInfo extends JPanel {
         JFrame frame = new JFrame("基本信息管理");
         frame.setSize(900,600);
         frame.setVisible(true);
-        frame.setContentPane((new BaseInfo()).MainPanel);
+        frame.setContentPane((new BaseInfo(new Dimension(500,500))).MainPanel);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(3);
 

@@ -47,7 +47,7 @@ public class InfoPanel2 extends JPanel{
     Font font2  = new Font("微软雅黑",Font.PLAIN,14);
     Color color = new Color(66, 139, 202);
 
-    public InfoPanel2(Staff staff){
+    public InfoPanel2(Staff staff, Dimension dimension){
         this.staff=staff;
 
         setLayout(new BorderLayout());
@@ -62,6 +62,7 @@ public class InfoPanel2 extends JPanel{
         add(getTopPanel(),BorderLayout.NORTH);
         add(getCenterPanel(),BorderLayout.CENTER);
         add(getBottonPanel(),BorderLayout.SOUTH);
+        setPreferredSize(dimension);
     }
 
     public JPanel getTopPanel(){
@@ -177,7 +178,7 @@ public class InfoPanel2 extends JPanel{
         frame.setLocationRelativeTo(null);
 //        frame.add(new InfoPanel2());
 //        try {
-            frame.add(new InfoPanel2(staffDAO.getArchives("20010101")));
+            frame.add(new InfoPanel2(staffDAO.getArchives("20010101"), new Dimension(500,500)));
 //        } catch (SQLException e) {
 //            e.printStackTrace();
 //        }

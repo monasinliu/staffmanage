@@ -3,7 +3,6 @@ package com.soft1611.manage.frame;
 import com.soft1611.manage.factory.ServiceFactory;
 import com.soft1611.manage.model.Attendance;
 import com.soft1611.manage.model.Staff;
-import com.soft1611.manage.service.AnnounceService;
 import com.soft1611.manage.service.AttendanceManageService;
 import com.soft1611.manage.service.StaffService;
 import com.soft1611.manage.utils.DialogDatePicker;
@@ -11,7 +10,6 @@ import com.soft1611.manage.utils.DialogDatePicker;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.sql.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -43,7 +41,7 @@ public class CheckAttendance extends JPanel {
     private java.util.List<Staff> staffList;
     private List<Attendance> aDayList;
 
-    String selectItem;
+    String selectItem = "人事部";
     Font labelFont = new Font("微软雅黑",Font.BOLD,14);
     Font nameFont = new Font("微软雅黑",Font.ITALIC,20);
     Color leaveOrange = new Color(239,179,54);
@@ -58,10 +56,19 @@ public class CheckAttendance extends JPanel {
     Map<String,String> map = new HashMap<>();
     List<Attendance> attendanceList = new ArrayList<>();
 
-    public CheckAttendance(){
+    public CheckAttendance(Dimension dimension){
         add(mainPanel);
+        setPreferredSize(dimension);
         cardLayout = new CardLayout();
         centerPanel.setLayout(cardLayout);
+        selectItem = (String)selectBox.getSelectedItem();
+        staffList = staffService.queryFilter(" WHERE department = '"
+                +selectItem+"' ");
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout(FlowLayout.LEFT,10,40));
+        setCheckPanel(panel);
+        centerPanel.add(panel,selectItem);
+        cardLayout.show(centerPanel,selectItem);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         timeLabel.setText(sdf.format(new Date()));
         selectBox.addItemListener(new ItemListener() {
@@ -187,7 +194,7 @@ public class CheckAttendance extends JPanel {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("CheckAttendance");
-        frame.setContentPane(new CheckAttendance().mainPanel);
+        frame.setContentPane(new CheckAttendance(new Dimension(500,500)).mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
