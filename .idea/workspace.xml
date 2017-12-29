@@ -2,96 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65922ce0-2b61-41dc-a1ce-519b9f888466" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/service/OutOfAccount.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/SetOfAccountManagePanel$2.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AdvicePanel$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AdvicePanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AdvicePanel$2.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AdvicePanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AdvicePanel$3.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AdvicePanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AdvicePanel.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AdvicePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$10.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$11.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$2.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$3.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$4.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$5.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$6.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$7.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$8.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$9.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/AssessmentManagePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$10.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$11.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$12.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$13.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$14.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$15.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$2.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$3.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$4.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$5.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$6.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$7.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$8.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$9.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/BaseInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/CheckAttendance$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/CheckAttendance$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/CheckAttendance$2.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/CheckAttendance$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/CheckAttendance$3.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/CheckAttendance$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/CheckAttendance$4.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/CheckAttendance$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/CheckAttendance.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/CheckAttendance.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/EducationPanel$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/EducationPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/EducationPanel$2.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/EducationPanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/EducationPanel$3.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/EducationPanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/EducationPanel$4.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/EducationPanel$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/EducationPanel.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/EducationPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/InfoPanel.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/InfoPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/InfoPanel2$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/InfoPanel2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/InfoPanel2.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/InfoPanel2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/InfoPanel3.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/InfoPanel3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/LoginFrame.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/LoginFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$10.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$11.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$12.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$13.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$2.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$3.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$4.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$5.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$6.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$7.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$8.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$9.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/MainFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/SetOfAccountManagePanel$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/SetOfAccountManagePanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/SetOfAccountManagePanel.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/SetOfAccountManagePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel$1.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel$2.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel$3.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel$4.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel$5.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/frame/StatisticsPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/service/WageService.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/service/WageService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/service/impl/WageServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/staffmanage/com/soft1611/manage/service/impl/WageServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/AdvicePanel.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/AdvicePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/AssessmentManagePanel.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/AssessmentManagePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/BaseInfo.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/BaseInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/CheckAttendance.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/CheckAttendance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/EducationPanel.form" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/EducationPanel.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/EducationPanel.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/EducationPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel2.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel3.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/LoginFrame.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/LoginFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/MainFrame.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/SetOfAccountManagePanel.form" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/SetOfAccountManagePanel.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/SetOfAccountManagePanel.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/SetOfAccountManagePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/frame/StatisticsPanel.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/frame/StatisticsPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/service/WageService.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/service/WageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/soft1611/manage/service/impl/WageServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/soft1611/manage/service/impl/WageServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,8 +26,8 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="69" column="69" lean-forward="true" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+            <state relative-caret-position="1653">
+              <caret line="69" column="69" lean-forward="false" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -125,7 +36,7 @@
       <file leaf-file-name="StatisticsPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/StatisticsPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3885">
+            <state relative-caret-position="1421">
               <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
               <folding />
             </state>
@@ -135,7 +46,7 @@
       <file leaf-file-name="SetOfAccountManagePanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/SetOfAccountManagePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-594">
+            <state relative-caret-position="580">
               <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -147,8 +58,8 @@
       <file leaf-file-name="InfoPanel2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="59" column="35" lean-forward="true" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+            <state relative-caret-position="500">
+              <caret line="59" column="35" lean-forward="false" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -157,7 +68,7 @@
       <file leaf-file-name="EducationPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/EducationPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
+            <state relative-caret-position="4002">
               <caret line="152" column="70" lean-forward="false" selection-start-line="152" selection-start-column="70" selection-end-line="152" selection-end-column="70" />
               <folding />
             </state>
@@ -174,7 +85,7 @@
       <file leaf-file-name="CheckAttendance.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/CheckAttendance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="5278">
               <caret line="196" column="70" lean-forward="false" selection-start-line="196" selection-start-column="70" selection-end-line="196" selection-end-column="70" />
               <folding />
             </state>
@@ -272,7 +183,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1378" />
+    <option name="width" value="1370" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -293,9 +204,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -447,226 +357,6 @@
               <option name="myItemId" value="frame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StatisticsPanel" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SetOfAccountManagePanel" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainFrame" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoginFrame" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EducationPanel" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CheckAttendance" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BaseInfo" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AssessmentManagePanel" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AnnouncePanel" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="staffmanage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdvicePanel" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -724,6 +414,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1284,6 +975,7 @@
       <workItem from="1514413330541" duration="5000" />
       <workItem from="1514418005173" duration="1277000" />
       <workItem from="1514419312864" duration="27406000" />
+      <workItem from="1514468226586" duration="618000" />
     </task>
     <servers />
   </component>
@@ -1311,42 +1003,42 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173646000" />
+    <option name="totallyTimeSpent" value="174264000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25160256" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966226" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20631425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20605613" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Compute Code Lines" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32966226" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1398,7 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1466,9 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1486,7 +1174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-870">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1494,7 +1181,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="37" column="57" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,7 +1188,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="75" column="41" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1510,7 +1195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5264">
           <caret line="135" column="32" lean-forward="true" selection-start-line="135" selection-start-column="32" selection-end-line="135" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1518,7 +1202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-174">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1526,9 +1209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1598,19 +1278,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/model/OutOfAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/model/OutOfAccount.java" />
     <entry file="file://E:/java_study/work1/src/com/soft161101/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2291">
           <caret line="105" column="22" lean-forward="true" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1618,7 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1634,7 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1754,15 +1424,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="69" column="69" lean-forward="true" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
+        <state relative-caret-position="1653">
+          <caret line="69" column="69" lean-forward="false" selection-start-line="69" selection-start-column="69" selection-end-line="69" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/CheckAttendance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="5278">
           <caret line="196" column="70" lean-forward="false" selection-start-line="196" selection-start-column="70" selection-end-line="196" selection-end-column="70" />
           <folding />
         </state>
@@ -1770,7 +1440,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/StatisticsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3885">
+        <state relative-caret-position="1421">
           <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
           <folding />
         </state>
@@ -1780,7 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1788,7 +1457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1799,7 +1467,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/EducationPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
+        <state relative-caret-position="4002">
           <caret line="152" column="70" lean-forward="false" selection-start-line="152" selection-start-column="70" selection-end-line="152" selection-end-column="70" />
           <folding />
         </state>
@@ -1807,7 +1475,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/SetOfAccountManagePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
+        <state relative-caret-position="580">
           <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1817,8 +1485,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/soft1611/manage/frame/InfoPanel2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="59" column="35" lean-forward="true" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        <state relative-caret-position="500">
+          <caret line="59" column="35" lean-forward="false" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
           <folding />
         </state>
       </provider>
