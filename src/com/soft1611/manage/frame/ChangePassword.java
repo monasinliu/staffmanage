@@ -7,6 +7,7 @@ import com.soft1611.manage.service.UserService;
 import jdk.nashorn.internal.scripts.JO;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Map;
@@ -20,12 +21,28 @@ public class ChangePassword extends JPanel {
     private JPasswordField passwordField1;
     private JPasswordField passwordField2;
     private JPasswordField passwordField3;
+    private JLabel Label1;
+    private JLabel Label2;
+    private JLabel Label3;
+    Color color = new Color(66, 139, 202);
 
+    Font font = new Font("微软雅黑",Font.PLAIN,20);
+    Font font1 = new Font("微软雅黑",Font.BOLD,18);
     private UserService userService = ServiceFactory.getUserServiceInstance();
 
     public ChangePassword(User user) {
+        mainPanel.setPreferredSize(new Dimension(900,900));
         add(mainPanel);
 
+        Label1.setFont(font);
+        Label1.setForeground(color);
+        Label2.setFont(font);
+        Label2.setForeground(color);
+        Label3.setFont(font);
+        Label3.setForeground(color);
+        passwordField1.setFont(font1);
+        passwordField2.setFont(font1);
+        passwordField3.setFont(font1);
         确认保存Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

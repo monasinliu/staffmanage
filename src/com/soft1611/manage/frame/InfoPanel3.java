@@ -29,12 +29,12 @@ public class InfoPanel3 extends JPanel {
     private DefaultTableModel dtm;
     private DefaultTableCellRenderer renderer,renderer1;
     //protected java.util.List<Attendance> attendances;
-   // Iterator<Attendance> iterator = null;
-   protected java.util.List<Wage> wages;
+    // Iterator<Attendance> iterator = null;
+    protected java.util.List<Wage> wages;
     Iterator<Wage> iterator = null;
 
     private WageDAO wagesDAO = DAOFactory.getWageDAOInstance();
-   // private AttendanceDAO attendanceDAO = DAOFactory.getAttendanceDAOInstance();
+    // private AttendanceDAO attendanceDAO = DAOFactory.getAttendanceDAOInstance();
     private Staff staff;
     private StaffService staffService = ServiceFactory.getStaffService();
     private InfoPanel2 infoPanel2;
@@ -44,17 +44,17 @@ public class InfoPanel3 extends JPanel {
     private JLabel titleLabel;
     private JButton[] jButtons;
     private String[] info = {"上一页","下一页","导  出","打  印"};
-    Font font  = new Font("微软雅黑",Font.PLAIN,22);
-    Font font1 = new Font("微软雅黑",Font.PLAIN,14);
-    Font font2  = new Font("微软雅黑",Font.PLAIN,14);
+    Font font  = new Font("微软雅黑",Font.PLAIN,26);
+    Font font1 = new Font("微软雅黑",Font.PLAIN,18);
+    Font font2  = new Font("微软雅黑",Font.PLAIN,18);
     Color color = new Color(66, 139, 202);
-    Font font3 = new Font("微软雅黑",Font.PLAIN,18);
-    public InfoPanel3(Staff staff, Dimension dimension){
+    Font font3 = new Font("微软雅黑",Font.PLAIN,22);
+    public InfoPanel3(Staff staff){
         this.staff=staff;
 
         setLayout(new BorderLayout());
         //setBackground(Color.WHITE);
-        setPreferredSize(dimension);
+        setSize(1600,1000);
         topPanel=new JPanel();
         topPanel.setBackground(Color.white);
         centerPanel = new JPanel();
@@ -71,7 +71,7 @@ public class InfoPanel3 extends JPanel {
         titleLabel.setBackground(Color.BLACK);
         titleLabel.setFont(font);
         setLayout(new BorderLayout());
-        topPanel.setPreferredSize(new Dimension(800,50));
+        topPanel.setPreferredSize(new Dimension(1600,80));
         topPanel.add(titleLabel,BorderLayout.SOUTH);
         return topPanel;
     }
@@ -80,8 +80,8 @@ public class InfoPanel3 extends JPanel {
 
         table = new JTable();
         table.setRowHeight(25);
-        table.setPreferredSize(new Dimension(700,700));
-        table.getTableHeader().setPreferredSize(new Dimension(1,30));
+        table.setPreferredSize(new Dimension(1400,900));
+        table.getTableHeader().setPreferredSize(new Dimension(1,40));
         table.getTableHeader().setFont(font3);
         table.setFont(font1);
 
@@ -111,13 +111,13 @@ public class InfoPanel3 extends JPanel {
             content[4] = String.valueOf(wages.getRealWage());
             if(content[0] != null){
                 content[5] = "已下发";
-           }else{
+            }else{
                 content[5] = "null";
             }
             dtm.addRow(content);
         }
         JScrollPane scrollPane=new JScrollPane();
-        scrollPane.setPreferredSize(new Dimension(760,500));
+        scrollPane.setPreferredSize(new Dimension(1400,900));
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         scrollPane.setViewportView(table);
         centerPanel.add(scrollPane);
@@ -129,9 +129,9 @@ public class InfoPanel3 extends JPanel {
         jLabel1 = new JLabel("label1");
         jLabel2 = new JLabel("label2");
 
-        jLabel.setPreferredSize(new Dimension(300,30));
-        jLabel1.setPreferredSize(new Dimension(30,30));
-        jLabel2.setPreferredSize(new Dimension(30,30));
+        jLabel.setPreferredSize(new Dimension(600,50));
+        jLabel1.setPreferredSize(new Dimension(60,50));
+        jLabel2.setPreferredSize(new Dimension(60,50));
 
         jLabel.setBackground(Color.white);
         jLabel.setForeground(Color.white);
@@ -144,7 +144,7 @@ public class InfoPanel3 extends JPanel {
         jButtons = new JButton[4];
         for(int i = 0; i < jButtons.length ; i++){
             jButtons[i] = new JButton(info[i]);
-            jButtons[i].setPreferredSize(new Dimension(80,30));
+            jButtons[i].setPreferredSize(new Dimension(160,50));
             jButtons[i].setFont(font2);
             jButtons[i].setBackground(color);
             jButtons[i].setForeground(Color.white);
@@ -157,7 +157,7 @@ public class InfoPanel3 extends JPanel {
                 WagesExportExcel.exportData(wages);
                 JOptionPane.showMessageDialog(null,"导出成功！");
             }
-        });        bottonPanel.setPreferredSize(new Dimension(800,60));
+        });        bottonPanel.setPreferredSize(new Dimension(1400,90));
 
         bottonPanel.add(jButtons[3],FlowLayout.LEFT);
         bottonPanel.add(jLabel2,FlowLayout.LEFT);
@@ -176,11 +176,11 @@ public class InfoPanel3 extends JPanel {
 //            e.printStackTrace();
 //        }
         JFrame frame = new JFrame("测试窗体");
-        frame.setSize(800, 660);
+        frame.setSize(1600, 1000);
         frame.setLocationRelativeTo(null);
 //        frame.add(new InfoPanel2());
 //        try {
-        frame.add(new InfoPanel3(staffDAO.getArchives("20010101"), new Dimension(500,500)));
+        frame.add(new InfoPanel3(staffDAO.getArchives("20010101")));
 //        } catch (SQLException e) {
 //            e.printStackTrace();
 //        }
