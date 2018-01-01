@@ -28,16 +28,11 @@ public class LoginFrame extends JFrame{
     private JPanel loginPanel;
     private JTextField accountField;
     private JPasswordField passwordField;
-    private JLabel accountLabel;
-    private JLabel passwordLabel;
     private JButton loginButton;
-    Font font = new Font("宋体",Font.PLAIN,20);
-    Font font1 = new Font("宋体",Font.PLAIN,22);
     private UserService userService = ServiceFactory.getUserServiceInstance();
 
     Color oldColor = upPanel.getBackground();
     Color newColor = new Color(237,64,64);
-    Color color = new Color(185, 77, 75);
     Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
     int width = (int)screenSize.getWidth();
     int height = (int)screenSize.getHeight();
@@ -102,31 +97,16 @@ public class LoginFrame extends JFrame{
             panels[i] = new JPanel();
             panels[i].setLayout(new FlowLayout(FlowLayout.CENTER,10,40));
         }
-        accountLabel = new JLabel();
-        accountLabel.setText("请输入工号 ：");
-        accountLabel.setFont(font1);
-        accountLabel.setForeground(color);
-
         accountField = new JTextField();
         accountField.setBorder(roundBorder);
         Dimension dimension = new Dimension(270, 40);
         accountField.setPreferredSize(dimension);
-        accountField.setFont(font);
-        accountField.setForeground(color);
-        passwordLabel = new JLabel();
-        passwordLabel.setText("请输入密码 ：");
-        passwordLabel.setFont(font1);
-        passwordLabel.setForeground(color);
         passwordField = new JPasswordField();
         passwordField.setBorder(roundBorder);
         passwordField.setPreferredSize(dimension);
-        passwordField.setFont(font);
-        passwordField.setForeground(color);
         loginButton = new JButton("登 录");
         Style.setAddButtonStyle(loginButton);
-        panels[0].add(accountLabel);
         panels[0].add(accountField);
-        panels[1].add(passwordLabel);
         panels[1].add(passwordField);
         panels[2].add(loginButton);
         for (int i = 0; i < panels.length; i++) {
@@ -150,7 +130,7 @@ public class LoginFrame extends JFrame{
         User user = (User) map.get("user");
         if (user != null) {
             dispose();
-            new MainFrame(user);
+                    new MainFrame(user);
         }
     }
 

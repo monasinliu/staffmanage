@@ -77,9 +77,9 @@ public class MainFrame extends JFrame {
     //修改密码
     private ChangePassword changePasswordPanel;
     //奖惩信息
-    private AssessmentPanel assessmentPanel;
+    private AssessmentPanel assessmentPanel = new AssessmentPanel();
     //提出建议
-    //private AdvicePanel advicePanel;
+    private AdvicePanel advicePanel;
     //提交申请
     private JPanel applyPanel1 = new JPanel();
     //
@@ -92,7 +92,6 @@ public class MainFrame extends JFrame {
     Color lightBlack = new Color(51, 51, 51);
     Color anotherBlack = new Color(72, 72, 72);
     Color beauGreen = new Color(26, 188, 156);
-    Font font  = new Font("微软雅黑",Font.PLAIN,18);
     JButton[] buttons = new JButton[]{button1, button2,
             button3, button4, button5, button6};
     String[] strings = new String[]{"个人资料", "出勤记录", "薪资记录", "奖惩信息",
@@ -108,21 +107,16 @@ public class MainFrame extends JFrame {
     public MainFrame(User user) {
         this.user = user;
         staff = userService.getArchives(user.getAccount());
-        selfPanel = new InfoPanel(staff);
-        attendRecordPanel = new InfoPanel2(staff);
-        wageRecordPanel = new InfoPanel3(staff);
-        //advicePanel = new AdvicePanel(staff.getAccount(),dimension);
-        assessmentPanel = new AssessmentPanel(staff.getAccount());
-
+        selfPanel = new InfoPanel(staff,dimension);
+        attendRecordPanel = new InfoPanel2(staff,dimension);
+        wageRecordPanel = new InfoPanel3(staff,dimension);
+        advicePanel = new AdvicePanel(staff.getAccount(),dimension);
         init();
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setExtendedState(MAXIMIZED_BOTH);
 //        setUndecorated(true);
         setVisible(true);
-        readLabel.setFont(font);
-        infoLabel.setFont(font);
-        applyLabel.setFont(font);
 
 
         exitPanel.addMouseListener(new MouseAdapter() {
@@ -204,7 +198,6 @@ public class MainFrame extends JFrame {
             @Override
             public void mouseExited(MouseEvent e) {
                 infoLabel.setForeground(Color.white);
-
             }
         });
         applyJPanel.addMouseListener(new MouseAdapter() {
@@ -227,7 +220,6 @@ public class MainFrame extends JFrame {
             @Override
             public void mouseExited(MouseEvent e) {
                 applyLabel.setForeground(Color.white);
-
             }
         });
         readAnnouncePanel.addMouseListener(new MouseAdapter() {
@@ -247,23 +239,20 @@ public class MainFrame extends JFrame {
             @Override
             public void mouseExited(MouseEvent e) {
                 readLabel.setForeground(Color.white);
-
             }
         });
         profileLabel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                new ChangePhoto(user);
+//                new ChangePhoto();
             }
         });
     }
 
     private void init() {
         centerPanel.setLayout(cardLayout);
-//        showStaticPanels = new JPanel[]{selfPanel, attendRecordPanel, wageRecordPanel
-//                , assessmentPanel, advicePanel, applyPanel1};
         showStaticPanels = new JPanel[]{selfPanel, attendRecordPanel, wageRecordPanel
-                , assessmentPanel, applyPanel1};
+                , assessmentPanel, advicePanel, applyPanel1};
         showTrendsPanels = new JPanel[]{baseInfoPanel,assessmentManagePanel,educationPanel
                 ,checkAttendancePanel,statisticsPanel,setOfAccountManagePanel};
         for (int i = 0; i < showStaticPanels.length; i++) {
@@ -351,7 +340,7 @@ public class MainFrame extends JFrame {
                 addPanels[i].setBackground(anotherBlack);
                 JLabel label = new JLabel("   " + workName);
                 label.setForeground(Color.white);
-                label.setFont(new Font("微软雅黑", Font.PLAIN, 18));
+                label.setFont(new Font("微软雅黑", Font.PLAIN, 13));
                 addPanels[i].add(label);
                 addPanels[i].addMouseListener(new MouseAdapter() {
                     @Override
